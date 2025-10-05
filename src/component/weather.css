@@ -1,0 +1,127 @@
+.weather {
+    padding: 25px;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid #808080;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 600px;
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive positioning */
+@media (min-width: 769px) {
+    .weather {
+        margin-left: auto;
+        margin-right: 2rem;
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .weather {
+        margin: 1rem;
+        max-width: 90%;
+        width: auto;
+    }
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-bar input {
+    height: 50px;
+    border : none;
+    outline : none;
+    border-radius: 40px;
+    padding-left: 25px;
+    background: #ebfffc;
+    font-size: 18px;
+    color : #081458;
+}
+
+.search-bar img {
+    width: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    background: #ebfffc;
+    cursor: pointer;
+}
+
+.error-message {
+    color: #bc0000;
+    /* background: rgba(255, 255, 255, 0.9); */
+     /* padding: 10px 15px; */
+    /* border-radius: 8px;
+    margin-top: 10px; */
+    font-size: 12px;
+    /* font-weight: 500; */
+    text-align: center;
+    max-width: 300px;
+}
+
+.weather-icon {
+    width: 130px;
+    margin: 20px 0;
+}
+
+.temperature {
+    color: #fff;
+    font-size: 70px;
+    line-height: 1;
+    margin-bottom: 5px;
+}   
+
+.location {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.weather-description {
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    font-weight: 300;
+}
+
+.coordinates {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+.weather-data {
+    width: 100%;
+    margin-top : 25px;
+    color :#fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-data .col {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 22px;
+}
+
+.weather-data .col span {
+    display: block;
+    font-size: 16px;
+}
+
+.weather-data .col img {
+    width: 26px;
+    margin-top: 10px;
+}
